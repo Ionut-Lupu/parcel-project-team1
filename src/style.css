@@ -541,7 +541,6 @@ body {
   /* */
   padding: 60px 0px 0px 0px;
   margin: 0 auto;
-  position: static;
 }
 
 .natural_headings h2 {
@@ -555,7 +554,12 @@ body {
   /* */
   padding: 15px 0px 8px 0px;
   margin: 0 auto;
-  position: static;
+}
+
+.natural-products_100-natural-heading:hover,
+.natural-products_products-heading:hover {
+  transform: scale(1.1);
+  transition: .35s cubic-bezier(.4, 0, .2, 1) 0ms;
 }
 
 /* List */
@@ -610,6 +614,55 @@ body {
 
 .natural_list_product-details-milkshake {
   background-color: rgba(194, 226, 151, 1);
+}
+
+.natural_list_product-details-ice-cream:hover {
+  background-color: rgb(253, 172, 192);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: .35s cubic-bezier(.4,0,.2,1) 0ms;
+}
+
+.natural_list_product-details-ice-coffee:hover {
+  background-color: rgb(255, 214, 156);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: .35s cubic-bezier(.4, 0, .2, 1) 0ms;
+}
+
+.natural_list_product-details-milkshake:hover {
+  background-color: rgb(184, 226, 130);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: .35s cubic-bezier(.4, 0, .2, 1) 0ms;
+}
+
+.natural_list_product-details-ice-cream:hover .h2_ice-cream,
+.natural_list_product-details-ice-coffee:hover .h2_ice-coffee,
+.natural_list_product-details-milkshake:hover .h2_milkshakes {
+  transform: scale(1.1);
+  transition: .35s cubic-bezier(.4, 0, .2, 1) 0ms;
+}
+
+.natural_list_product-details-ice-cream:hover .span_ice-cream,
+.natural_list_product-details-ice-coffee:hover .span_ice-coffee,
+.natural_list_product-details-milkshake:hover .span_milkshakes {  
+  transform: scale(1.1);
+  transition: .35s cubic-bezier(.4, 0, .2, 1) 0ms;
+}
+
+.natural_list_product-details-ice-cream:hover .button_ice-cream,
+.natural_list_product-details-ice-coffee:hover .button_ice-coffee,
+.natural_list_product-details-milkshake:hover .button_milkshake {
+  transform: scale(1.2);
+  border-radius: 20%;
+  background-color: rgba(212, 20, 67, 1);
+  transition: .35s cubic-bezier(.4, 0, .2, 1) 0ms;
+}
+
+.natural_list_product-details-ice-cream:hover .svg_ice-cream,
+.natural_list_product-details-ice-coffee:hover .svg_ice-coffee,
+.natural_list_product-details-milkshake:hover .svg_milkshakes {
+  transform: scale(1.1);
+  fill: white;
+  transition: .35s cubic-bezier(.4, 0, .2, 1) 0ms;
 }
 
 .natural_list_product-details-ice-cream h2,
