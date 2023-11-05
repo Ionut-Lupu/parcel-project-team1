@@ -23,6 +23,8 @@ body {
 }
 
 /*header-section*/
+header {width: 100%;
+background: #FFB8CA;}
 #background-wrap {
   bottom: 0;
   left: 0;
@@ -30,7 +32,11 @@ body {
   right: 0;
   top: 0;
   z-index: 1;
+  width: 100%;
+background: #FFB8CA;
 }
+.banner-container{width: 100%;
+background-color: #FFB8CA;}
 .splash-milk,
 .tasty-reaction,
 .article-banner {
@@ -73,6 +79,8 @@ body {
   padding: 8px 20px;
   align-items: center;
   background: #FFB8CA;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .js-menu-container {
@@ -185,6 +193,8 @@ body {
 
 .banner-section {
   background-color: #FFB8CA;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .title-banner {
@@ -936,10 +946,14 @@ body {
   .header-section-desktop {
       display: none;
     }
-  
+  .header-section.tablet{width: 768px;
+  margin:0 auto;
+padding-left: 0;
+padding-right: 0;}
     .banner-section-desktop {
       display: none;
     }
+    .banner-container{display: block;}
   
     .header-section-tablet {
       display: flex;
@@ -997,8 +1011,8 @@ body {
     .banner-section-tablet {
       display: block;
       background-color: #FFB8CA;
-      padding-left: 32px;
-      padding-right: 32px;
+      width: 768px;
+      margin: 0 auto;
     }
   
     .banner-section-tablet .ice-cream-banner {
@@ -1085,6 +1099,7 @@ body {
     .banner-section-tablet .tasty-reaction {
       margin-top: 50px;
       text-align: right;
+
     }
   
     .banner-section-tablet .tasty-reaction img {
@@ -1258,7 +1273,11 @@ z-index: 2;}
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 37px 56px;
+    width: 1280px;
+    padding-top: 37px;
+    padding-bottom:37px ;
+    margin: 0 auto
+
   }
 
   .menu-desktop .current-nav a {
@@ -1294,9 +1313,9 @@ z-index: 2;}
   .banner-section-desktop {
     display: block;
     background-color: #FFB8CA;
-    padding-left: 56px;
-    padding-right: 56px;
+   margin: 0 auto;
     padding-bottom: 60px;
+    width: 1280px;
   }
 
   .banner-section-desktop .title-banner h1 {
@@ -1408,6 +1427,7 @@ z-index: 2;}
   .banner-section-desktop .tasty-reaction {
     margin-top: 87px;
     text-align: right;
+    z-index: 2;
   }
 
   .banner-section-desktop .tasty-reaction img {
@@ -1461,7 +1481,7 @@ z-index: 2;}
     right: 0;
     top: 156px;
     width: 30%;
-    padding-right: 56px;
+    padding-right:5%;
   }
 
   .banner-section-desktop .ice-cream-banner {
@@ -1472,8 +1492,9 @@ z-index: 2;}
     align-items: center;
     position: absolute;
     top: 54px;
-    right: 15%;
+    right: 18%;
     bottom: 77px;
+   
     
   }
 
@@ -1484,6 +1505,7 @@ z-index: 2;}
     top: 50px;
     right: 179px;
     bottom: 0;
+   
   }
   /*100% natural-section*/
 
