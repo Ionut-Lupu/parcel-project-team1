@@ -24,19 +24,21 @@ body {
 
 /*header-section*/
 header {width: 100%;
-background: #FFB8CA;}
+background: #FFB8CA;
+position: relative;}
 #background-wrap {
   bottom: 0;
   left: 0;
-  position: fixed;
   right: 0;
   top: 0;
   z-index: 1;
   width: 100%;
-background: #FFB8CA;
+overflow: hidden;
+position: absolute;
 }
 .banner-container{width: 100%;
-background-color: #FFB8CA;}
+background-color: #FFB8CA;
+}
 .splash-milk,
 .tasty-reaction,
 .article-banner {
@@ -81,6 +83,7 @@ background-color: #FFB8CA;}
   background: #FFB8CA;
   width: 320px;
   margin: 0 auto;
+  position: relative;
 }
 
 .js-menu-container {
@@ -195,6 +198,7 @@ background-color: #FFB8CA;}
   background-color: #FFB8CA;
   width: 320px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .title-banner {
@@ -1033,6 +1037,7 @@ padding-right: 0;}
       top: 35px;
       right: 136px;
       bottom: 0;
+      z-index: 2;
   
     }
   
@@ -1106,7 +1111,7 @@ padding-right: 0;}
       width: 190px;
       height: 150px;
     }
-  
+  /*
     .banner-section-tablet .number-right-side {
       width: 43px;
       position: relative;
@@ -1115,6 +1120,7 @@ padding-right: 0;}
       flex-direction: column;
       margin-bottom: 10px;
     }
+    */
   
     .banner-section-tablet .number-right-side h3 {
       color: #D41443;
@@ -1149,7 +1155,70 @@ padding-right: 0;}
       right: 0;
       z-index: 1;
     }
-  
+        .banner-section-tablet .first-list-banner {
+          display: flex;
+          justify-content: space-between;
+        }
+    
+        .banner-section-tablet .number-right-side h3 {
+          color: #D41443;
+          font-family: "Titan One";
+          font-size: 28px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: 1.84px;
+          text-transform: uppercase;
+          margin: 0;
+          z-index: 3;
+          position: relative;
+        }
+    
+        .banner-section-tablet .number-right-side {
+          position: relative;
+        }
+    
+        .banner-section-tablet .number-right-side p {
+          color: #FFF;
+          font-family: " DM Sans";
+          font-size: 8px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          text-align: right;
+          margin: 0;
+          margin-right: 8px;
+        }
+    
+        .food-trucks {
+          width: 43px;
+        }
+    
+        .banner-section-tablet .number-right-side svg {
+          width: 16px;
+          height: 16px;
+          position: absolute;
+          top: 0;
+          right: 10px;
+          z-index: 1;
+        }
+    
+        .banner-section-tablet .number-li-banner {
+          display: flex;
+          flex-direction: column;
+          gap: 18px;
+          top: 40px;
+          position: relative;
+        }
+    
+        .banner-section-tablet .second-list-banner {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+    
+    
+        }
+  /*
     .banner-section-tablet .right-side-banner {
       display: flex;
       flex-direction: column;
@@ -1164,7 +1233,7 @@ padding-right: 0;}
     .banner-section-tablet .right-side-banner div {
       margin-right: 0;
     }
-
+/*
   /*100% natural-section*/
 
   /*how-its-made-section*/
@@ -1276,7 +1345,9 @@ z-index: 2;}
     width: 1280px;
     padding-top: 37px;
     padding-bottom:37px ;
-    margin: 0 auto
+    margin: 0 auto;
+    position: relative;
+
 
   }
 
@@ -1311,11 +1382,13 @@ z-index: 2;}
   }
 .banner-section{display: none;}
   .banner-section-desktop {
-    display: block;
+    display: flex;
     background-color: #FFB8CA;
    margin: 0 auto;
-    padding-bottom: 60px;
+    
     width: 1280px;
+    margin: 0 auto;
+    flex-direction: column;
   }
 
   .banner-section-desktop .title-banner h1 {
@@ -1364,6 +1437,7 @@ z-index: 2;}
     flex-direction: column;
     top: 40px;
     margin: 0;
+    gap:18px ;
   }
 
   .banner-section-desktop .article-banner p {
@@ -1402,111 +1476,106 @@ z-index: 2;}
        stroke: #FFF
      }
 
-  .banner-section-desktop .milk-with-article {
-    display: flex;
-    flex-direction: row;
-    z-index: 3;
-    margin-top: 20px;
-  }
+  .banner-section-desktop .first-list-banner{display: flex;
+  justify-content: space-between;}
+.banner-section-desktop .number-right-side h3 {
+  color: #D41443;
+  font-family: "Titan One";
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.84px;
+  text-transform: uppercase;
+  margin: 0;
+  z-index: 3;
+  position: relative;
+}
+.banner-section-desktop .number-right-side{position: relative;}
+.banner-section-desktop .number-right-side p {
+  color: #FFF;
+  font-family: " DM Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: right;
+  margin: 0;
+  margin-right: 18px;
+}
 
-  .banner-section-desktop .article-banner {
-    display: flex;
-    flex-direction: column;
-    padding-top: 68px;
-  }
+.food-trucks {
+  width: 70px;
+}
 
-  .banner-section-desktop .number-right-side {
-    width: 72px;
-    position: relative;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 18px;
-  }
+.banner-section-desktop .number-right-side svg {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  right:15px;
+  z-index:1;
+}
+.banner-section-desktop .number-li-banner{display: flex;
+flex-direction: column;
+gap: 18px;
+top:40px;
+position: relative;}
+ .banner-section-desktop .second-list-banner{display: flex;
+flex-direction: row;
+justify-content: space-between;
 
-  .banner-section-desktop .tasty-reaction {
-    margin-top: 87px;
-    text-align: right;
-    z-index: 2;
-  }
 
-  .banner-section-desktop .tasty-reaction img {
-    width: 304px;
-    height: 241px;
-  }
+}
+.banner-section-desktop .tasty-reaction {
+  text-align: right;
+  z-index: 2;
+  margin: 0;
+ 
+  
+}
 
-  .banner-section-desktop .number-right-side h3 {
-    color: #D41443;
-    font-family: "Titan One";
-    font-size: 46px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 1.84px;
-    text-transform: uppercase;
-    margin: 0;
-    z-index: 2;
-  }
+.banner-section-desktop .tasty-reaction img {
+  width: 304px;
+  height: 241px;
+}
+.banner-section-desktop .milk-with-article {
+  display: flex;
+  flex-direction: row;
+  z-index: 3;
+  margin-top: 20px;
 
-  .banner-section-desktop .number-right-side p {
-    color: #FFF;
-    font-family: " DM Sans";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-align: right;
-    margin: 0;
-    margin-right: 18px;
-  }
+  margin: 0;
+}
 
-  .food-trucks {
-    width: 70px;
-  }
+.banner-section-desktop .article-banner {
+  display: flex;
+  flex-direction: column;
+  padding-top: 68px;
+}
+.banner-section-desktop .ice-cream-banner {
+  width: 534px;
+  height: 534px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 15px;
+  right: 18%;
+  bottom: 77px;
 
-  .banner-section-desktop .number-right-side svg {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
-  }
 
-  .banner-section-desktop .right-side-banner {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    position: absolute;
-    right: 0;
-    top: 156px;
-    width: 30%;
-    padding-right:5%;
-  }
+}
 
-  .banner-section-desktop .ice-cream-banner {
-    width: 534px;
-    height: 534px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 54px;
-    right: 18%;
-    bottom: 77px;
-   
-    
-  }
+.banner-section-desktop .ice-cream-img {
+  width: 236px;
+  height: 557px;
+  position: absolute;
+  top: 50px;
+  right: 179px;
+  bottom: 0;
 
-  .banner-section-desktop .ice-cream-img {
-    width: 236px;
-    height: 555px;
-    position: absolute;
-    top: 50px;
-    right: 179px;
-    bottom: 0;
-   
-  }
+}
   /*100% natural-section*/
 
   /*how-its-made-section*/
