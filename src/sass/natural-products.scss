@@ -1,0 +1,375 @@
+/*100% natural-section*/
+.natural-section_container {
+  z-index: 1;
+  background-color: white;
+}
+
+.natural-products_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: static;
+}
+
+/* Headings */
+
+.natural_headings {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: static;
+}
+
+.natural_headings h3 {
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.145;
+  text-align: center;
+  color: rgba(255, 165, 186, 1);
+  /* */
+  padding: 60px 0px 0px 0px;
+  margin: 0 auto;
+  position: static;
+  transform: scale(1);
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+.natural_headings h3:hover {
+  transform: scale(1.2);
+}
+
+.natural_headings h2 {
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.145;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: rgba(212, 20, 67, 1);
+  /* */
+  padding: 15px 0px 8px 0px;
+  margin: 0 auto;
+  position: static;
+  transform: scale(1);
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+.natural_headings h2:hover {
+  transform: scale(1.2);
+}
+
+/* List */
+.natural_list_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 0px 60px 0px;
+}
+
+.natural_list_container li {
+  width: 280px;
+  height: 629px;
+  position: relative;
+}
+
+.natural-products_container ul {
+  list-style-type: none;
+  margin: 0px;
+}
+
+.natural_list_container li picture img {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  z-index: 3;
+}
+
+.natural_list_product-details-ice-cream,
+.natural_list_product-details-ice-coffee,
+.natural_list_product-details-milkshake {
+  position: absolute;
+  top: 140px;
+  border: none;
+  border-radius: 24px;
+  width: 280px;
+  height: 489px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.natural_list_product-details-ice-cream {
+  background-color: rgba(255, 184, 202, 1);
+}
+
+.natural_list_product-details-ice-coffee {
+  background-color: rgba(240, 209, 165, 1);
+}
+
+.natural_list_product-details-milkshake {
+  background-color: rgba(194, 226, 151, 1);
+}
+
+.natural_list_product-details-ice-cream h2,
+.natural_list_product-details-ice-coffee h2,
+.natural_list_product-details-milkshake h2 {
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.145;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  /* */
+  padding: 160px 0px 32px 0px;
+  margin: 0px;
+}
+
+.natural_list_product-details_3-dots {
+  width: 26px;
+  height: 6px;
+  fill: rgba(255, 255, 255, 1);
+}
+
+.natural_list_product-details-ice-cream span,
+.natural_list_product-details-ice-coffee span,
+.natural_list_product-details-milkshake span {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  /* */
+  padding: 32px 32px 32px 32px;
+}
+
+.natural_list_product-details_arrow-right {
+  width: 15px;
+  height: 20px;
+  fill: rgba(212, 20, 67, 1);
+}
+
+.natural_list_product-details_button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+}
+
+.natural_list_product-details-ice-cream:hover {
+  background-color: rgb(253, 172, 192);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.natural_list_product-details-ice-coffee:hover {
+  background-color: rgb(255, 214, 156);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.natural_list_product-details-milkshake:hover {
+  background-color: rgb(184, 226, 130);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.natural_list_product-details-ice-cream:hover .h2_ice-cream,
+.natural_list_product-details-ice-coffee:hover .h2_ice-coffee,
+.natural_list_product-details-milkshake:hover .h2_milkshakes {
+  transform: scale(1.1);
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.natural_list_product-details-ice-cream:hover .span_ice-cream,
+.natural_list_product-details-ice-coffee:hover .span_ice-coffee,
+.natural_list_product-details-milkshake:hover .span_milkshakes {
+  transform: scale(1.1);
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.natural_list_product-details-ice-cream:hover .button_ice-cream,
+.natural_list_product-details-ice-coffee:hover .button_ice-coffee,
+.natural_list_product-details-milkshake:hover .button_milkshake {
+  transform: scale(1.2);
+  border-radius: 20%;
+  background-color: rgba(212, 20, 67, 1);
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.natural_list_product-details-ice-cream:hover .svg_ice-cream,
+.natural_list_product-details-ice-coffee:hover .svg_ice-coffee,
+.natural_list_product-details-milkshake:hover .svg_milkshakes {
+  transform: scale(1.1);
+  fill: white;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.natural_list_product-details-ice-cream h2,
+.natural_list_product-details-ice-coffee h2,
+.natural_list_product-details-milkshake h2 {
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.145;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  /* */
+  padding: 160px 0px 32px 0px;
+  margin: 0px;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  /*100% natural-section*/
+  .natural_headings h3 {
+    font-size: 26px;
+    padding: 60px 0px 0px 0px;
+  }
+
+  .natural_headings h2 {
+    font-size: 48px;
+    letter-spacing: 0.04em;
+    padding: 18px 0px 20px 0px;
+  }
+
+  /* List */
+  .natural_list_container {
+    flex-direction: row;
+    padding: 0px 0px 60px 0px;
+    gap: 16px;
+  }
+
+  .natural_list_container li {
+    width: 224px;
+    height: 611px;
+  }
+
+  .natural_list_container li picture img {
+    width: 224px;
+    height: 224px;
+  }
+
+  .natural_list_product-details-ice-cream,
+  .natural_list_product-details-ice-coffee,
+  .natural_list_product-details-milkshake {
+    top: 112x;
+    width: 224px;
+    height: 473px;
+    z-index: 1;
+  }
+
+  .natural_list_product-details-ice-cream h2,
+  .natural_list_product-details-ice-coffee h2,
+  .natural_list_product-details-milkshake h2 {
+    font-size: 20px;
+    padding: 112px 0px 32px 0px;
+  }
+
+  .natural_list_product-details_3-dots {
+    width: 26px;
+    height: 6px;
+  }
+
+  .natural_list_product-details-ice-cream span,
+  .natural_list_product-details-ice-coffee span,
+  .natural_list_product-details-milkshake span {
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 32px 32px 32px 32px;
+  }
+
+  .natural_list_product-details_arrow-right {
+    width: 15px;
+    height: 20px;
+  }
+
+  .natural_list_product-details_button {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1158px) {
+  /*100% natural-section*/
+  .natural_headings h3 {
+    font-size: 30px;
+    letter-spacing: 0.04em;
+    padding: 61px 0px 0px 0px;
+  }
+
+  .natural_headings h2 {
+    font-size: 58px;
+    letter-spacing: 0.06em;
+    padding: 16px 0px 20px 0px;
+  }
+
+  /* List */
+  .natural_list_container {
+    flex-direction: row;
+    padding: 0px 0px 60px 0px;
+    gap: 16px;
+  }
+
+  .natural_list_container li {
+    width: 368px;
+    height: 796px;
+  }
+
+  .natural_list_container li picture img {
+    width: 368px;
+    height: 384px;
+  }
+
+  .natural_list_product-details-ice-cream,
+  .natural_list_product-details-ice-coffee,
+  .natural_list_product-details-milkshake {
+    top: 240px;
+    width: 368px;
+    height: 535px;
+    z-index: 1;
+  }
+
+  .natural_list_product-details-ice-cream h2,
+  .natural_list_product-details-ice-coffee h2,
+  .natural_list_product-details-milkshake h2 {
+    font-size: 30px;
+    padding: 165px 0px 32px 0px;
+  }
+
+  .natural_list_product-details_3-dots {
+    width: 26px;
+    height: 6px;
+  }
+
+  .natural_list_product-details-ice-cream span,
+  .natural_list_product-details-ice-coffee span,
+  .natural_list_product-details-milkshake span {
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 32px 32px 32px 32px;
+  }
+
+  .natural_list_product-details_arrow-right {
+    width: 15px;
+    height: 20px;
+  }
+
+  .natural_list_product-details_button {
+    width: 40px;
+    height: 40px;
+  }
+}
