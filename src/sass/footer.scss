@@ -204,21 +204,25 @@
   }
 
   .footer-container {
-    max-width: 1000px;
+    width: 1168px;
+   
+    
     display: flex;
     gap: 252px;
+    justify-content:space-between;
+      
   }
 
   .container-footer-social {
     padding: 0px;
-    width: 320px;
+   
   }
 
   .container-footer-title {
     gap: 40;
     margin-top: 40px;
     padding: 0px;
-    width: 428px;
+    
   }
 
   .footer-phone-text {
