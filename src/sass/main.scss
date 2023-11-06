@@ -1,3 +1,10 @@
+@import './header.scss';
+@import './natural-products.scss';
+@import './how-its-made.scss';
+@import './carousel.scss';
+@import './locations.scss';
+@import './footer.scss';
+
 *,
 *::before,
 *::after {
@@ -25,11 +32,3 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
-
-
-@import './header.scss';
-@import './natural-products.scss';
-@import './how-its-made.scss';
-@import './carousel.scss';
-@import './locations.scss';
-@import './footer.scss';

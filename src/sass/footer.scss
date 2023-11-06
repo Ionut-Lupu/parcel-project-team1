@@ -192,7 +192,7 @@
     letter-spacing: 0.28px;
   }
 
-  #br-for-mobile-2 {
+  .br-for-mobile-2 {
     display: none;
   }
 }
@@ -222,21 +222,18 @@
   }
 
   .container-footer-title {
-    gap: 40;
     margin-top: 40px;
     padding: 0px;
     
   }
 
   .footer-phone-text {
-    text-wrap: nowrap;
     font-size: 16px;
     line-height: 186%;
     letter-spacing: 0.32px;
   }
 
   .footer-phone-number {
-    text-wrap: nowrap;
     font-size: 16px;
     line-height: 186%;
     letter-spacing: 0.32px;

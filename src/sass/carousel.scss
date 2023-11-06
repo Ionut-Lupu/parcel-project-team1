@@ -31,13 +31,9 @@
 
 .container-wrapper img {
     min-width: 44px;
-    /*transition: scale(1);
-  transition: transform 350ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);*/
     transition-property: transform;
     transition-duration: 700ms;
     transition-timing-function: linear;
-    transition-delay: 0;
 }
 
 .container-wrapper img:hover {
