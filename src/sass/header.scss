@@ -40,6 +40,8 @@ header {
 }
 
 .menu-button svg {
+  position: relative;
+  z-index: 4;
   width: 20px;
   height: 12px;
 }
@@ -73,14 +75,14 @@ header {
 .js-menu-container.is-open {
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   background-color: #e17992;
-  width: 250px;
-  height: 100%;
+  width: 75vw;
+  height: 100vh;
   padding: 20px 20px;
-  z-index: 4;
+  z-index: 5;
 }
 
 .js-close-menu {
@@ -496,14 +498,12 @@ header {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-
-  -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2),
+  -webkit-box-shadow: 0 20px 30px rgba(255, 255, 255, 0.2),
     inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
-  -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2),
+  -moz-box-shadow: 0 20px 30px rgba(255, 255, 255, 0.2),
     inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2),
+  box-shadow: 0 20px 30px rgba(255, 255, 255, 0.2),
     inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
-
   height: 200px;
   position: absolute;
   width: 200px;
@@ -579,7 +579,12 @@ header {
     display: none;
   }
 
+    .js-menu-container.is-open {
+      width: 33vw;
+    }
+
   .header-section.tablet {
+    padding-top: 32px;
     width: 768px;
     margin: 0 auto;
     padding-left: 0;
@@ -670,7 +675,7 @@ header {
     width: 143px;
     height: 338px;
     position: absolute;
-    top: 45px;
+    top: 78px;
     right: 110px;
     bottom: 0;
     z-index: 2;

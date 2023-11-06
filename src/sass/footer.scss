@@ -118,6 +118,7 @@
   padding-top: 16px;
   border-top: 1px solid #e1e1e1;
   padding-bottom: 4px;
+  width: 100vw;
 }
 
 .text-copyright {
@@ -172,11 +173,13 @@
   .footer-phone-text {
     font-size: 14px;
     line-height: 186%;
+    white-space: nowrap;
   }
 
   .footer-phone-number {
     font-size: 14px;
     line-height: 186%;
+    white-space: nowrap;
   }
 
   .container-copyright {
