@@ -1,0 +1,34 @@
+@import './header.scss';
+@import './natural-products.scss';
+@import './how-its-made.scss';
+@import './carousel.scss';
+@import './locations.scss';
+@import './footer.scss';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+:root {
+    --font-family: 'DM Sans';
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
