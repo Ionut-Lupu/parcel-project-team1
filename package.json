@@ -5,13 +5,13 @@
   "homepage": "https://ionut-lupu.github.io/parcel-project-team1/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/index.html --public-url /parcel-project-team1/",
+    "build": "parcel build src/index.html --public-url ./",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://ionut-lupu.github.io/parcel-project-team1/"
+    "url": "git+https://github.com/goitacademy/parcel-project-team1"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
